@@ -9,8 +9,7 @@ import time
 bot = Bot("6443145925:AAFugA-zjfx8vU-JvGbjQR2Z09jmhCDK1EQ")
 dispatcher = Dispatcher(bot)
 
-main = ReplyKeyboardMarkup(resize_keyboard=True)
-main.add('Добавить оповещение погоды')
+
 async def on_startup(_):
     print('Бот успешно запущен!')
 
@@ -20,7 +19,7 @@ async def start(message: types.Message):
     #await db.cmd_start_db(message.from_user.id)
     await message.answer("Привет, это бот погодник!\n"
                          "Здесь ты можешь узнать актуальную погоду в любой точке мира!\n"
-                         "Напишите название населенного пункта, чтобы я показал тебе погоду",reply_markup=main)
+                         "Напишите название населенного пункта, чтобы я показал тебе погоду")
 
 
 @dispatcher.message_handler(commands=['every_day'])
