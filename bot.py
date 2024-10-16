@@ -6,7 +6,7 @@ from main import weather
 import schedule
 import time
 
-bot = Bot("6443145925:AAFugA-zjfx8vU-JvGbjQR2Z09jmhCDK1EQ")
+bot = Bot("TOKEN")
 dispatcher = Dispatcher(bot)
 
 
