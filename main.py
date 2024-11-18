@@ -1,4 +1,3 @@
-#a4ab9918d46fbaf7f59a43958774839d
 import requests
 import json
 def weather(city):
