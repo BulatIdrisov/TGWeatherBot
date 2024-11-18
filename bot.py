@@ -1,6 +1,10 @@
 from aiogram import Bot, Dispatcher, executor, types
 from main import weather
-bot = Bot("TOKEN")
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+bot = Bot(os.getenv('TOKEN'))
 dispatcher = Dispatcher(bot)
 async def on_startup(_):
     print('Бот успешно запущен!')
